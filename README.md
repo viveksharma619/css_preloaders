@@ -1,4 +1,4 @@
-# PostCSS with Gulp starter
+# Simple CSS Loaders made using PostCSS with Gulp
 Simple project that uses [PostCSS](http://postcss.org/) with [Gulp](https://gulpjs.com/)
 ## PostCSS Plugins used 
 * Precss
