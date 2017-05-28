@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="heading">
+            <h1>CSS LOADERS</h1>
+        </div>
+        <div class="main-container-dot" style="display:none">
+            <div class="loader one"></div>
+            <div class="loader two"></div>
+            <div class="loader three"></div>
+        </div>
+        <div class="main-container-circle">
+            <div class="cirle-loader cl1"></div>
+            <div class="cirle-loader cl2"></div>
+            <div class="cirle-loader cl3"></div>
+            <div class="cirle-loader cl4"></div>
+        </div>
+        <script>
+            setInterval(function(){
+                if(document.querySelector('.main-container-dot').style.display === 'none'){
+                document.querySelector('.main-container-circle').style.display = 'none';
+                document.querySelector('.main-container-dot').style.display = 'block';
+            }
+            else{
+                document.querySelector('.main-container-circle').style.display = 'block';
+                document.querySelector('.main-container-dot').style.display = 'none';
+            }
+            },7000);
+        </script>
+    </body>
+</html>
